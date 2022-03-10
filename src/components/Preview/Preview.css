@@ -1,0 +1,19 @@
+.character {
+  display: grid;
+  grid-template-rows: 1.5fr 1fr 2fr;
+  height: 700px;
+  width: 200px;
+}
+
+.bg {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.catchphrase {
+  font-size: 2rem;
+  font-family: cursive;
+  text-align: center;
+}
