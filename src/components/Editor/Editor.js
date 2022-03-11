@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Editor({ setHead }) {
+export default function Editor({ setHead, setMiddle }) {
   return (
     <div>
       <div className="left">
@@ -16,7 +16,7 @@ export default function Editor({ setHead }) {
           </label>
           <label>
             Middle
-            <select id="middle-dropdown">
+            <select id="middle-dropdown" onChange={(e) => setMiddle(e.target.value)}>
               <option value="blue">Blue</option>
               <option value="dress">Fancy</option>
               <option value="pink">Pink</option>

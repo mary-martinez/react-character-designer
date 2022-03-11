@@ -6,10 +6,11 @@ import { useState } from 'react';
 
 export default function Main() {
   const [head, setHead] = useState('bird');
+  const [middle, setMiddle] = useState('pink');
   return (
     <div>
-      <Editor setHead={setHead} />
-      <Preview head={head} />
+      <Editor setHead={setHead} setMiddle={setMiddle}/>
+      <Preview head={head} middle={middle} />
     </div>
   );
 }
